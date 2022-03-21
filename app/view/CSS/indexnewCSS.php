@@ -13,14 +13,59 @@ $img = __ROOT__.'/view/Images/bbb.jpeg';
     {
       height: 100%;
     }
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 5 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height:60%
+}
+#VMP 
+{
+padding-left:22%
+}
 
     .bg { 
-      /* The image used */
-      /* Full height */
+
       background-image: url("<?php echo $img?>");
       height: 100%; 
-        width: 100%;
-      /* Center and scale the image nicely */
+      width: 100%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -133,24 +178,20 @@ $img = __ROOT__.'/view/Images/bbb.jpeg';
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2)
     }
     .body2_titles
-    {margin-top: 30%;
+    {margin-top: 10%;
         font-family: 'Hind';
         font-size: 18px;
         font-weight: bold;
     }
     .body2_content
-    { margin-left: 10% ;
+    { margin-left: 7% ;
         margin-right:10%;
         font-family: 'Hind';
         font-size: 15px;
         color: #CCA203;
         height: 400px;
     }
-    .VMP
-    {
-        width:100%;
-        height:30%
-    }
+
     #Footer 
 {
     position: absolute;

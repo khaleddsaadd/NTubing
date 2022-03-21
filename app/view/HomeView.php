@@ -26,7 +26,6 @@ class v extends View
           <div class="row">
             <div class="col-sm-3 col-md-12">
                  <h1 class="introText">Go with the flow <br> Nile River Run</h1>
-
             </div>
             <div class="col-sm-9 col-md-6">
             </div>
@@ -46,7 +45,6 @@ class v extends View
         $str.='<div class="body1Vid">';
         $str.='<video id="vid"width="80%" height="400" controls>';
         $str.='<source src="'.__ROOT__.'/view/Videos/oo.mp4" type="video/mp4">';
-        $str.='<source src="'.__ROOT__.'/view/Videos/oo.ogg" type="video/ogg">';
         $str.='Your browser does not support the video tag.
                 </video>
             </div>
@@ -67,36 +65,74 @@ class v extends View
     }
     public function VMP()
     {
-        $str='<div class="container">
-        <div class="row-md" id="body2">
-        <div class="body2">
-            <div class="col-md-4" id="body2_1">
-                <center><p class="body2_titles">Our mission</p>
-                <br><br></center>
+    //     $str='<div class="container">
+    //     <div class="row-md" id="body2">
+    //     <div class="body2">
+    //         <div class="col-md-4" id="body2_1">
+    //             <center><p class="body2_titles">Our mission</p>
+    //             <br><br></center>
             
-                <p class="body2_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                 nisi ut aliquip ex ea commodo consequat.  </p>
-            </div>
+    //             <p class="body2_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+    //             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    //              nisi ut aliquip ex ea commodo consequat.  </p>
+    //         </div>
 
-            <div class="col-md-4" id="body2_2">
-            <center><p class="body2_titles">Our Plan</p>
-                <br><br></center>
-                <p class="body2_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                 nisi ut aliquip ex ea commodo consequat.  </p>
-            </div>
+    //         <div class="col-md-4" id="body2_2">
+    //         <center><p class="body2_titles">Our Plan</p>
+    //             <br><br></center>
+    //             <p class="body2_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+    //             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    //              nisi ut aliquip ex ea commodo consequat.  </p>
+    //         </div>
 
-            <div class="col-md-4" id="body2_3">
-            <center><p class="body2_titles">Our vision</p>
-                 <br><br></center>
-                 <p class="body2_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                 nisi ut aliquip ex ea commodo consequat. </p>
+    //         <div class="col-md-4" id="body2_3">
+    //         <center><p class="body2_titles">Our vision</p>
+    //              <br><br></center>
+    //              <p class="body2_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+    //             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    //              nisi ut aliquip ex ea commodo consequat. </p>
+    //     </div>
+    // </div>
+    //         </div>
+    // </div>';
+        $str = '
+        <center>
+        <div id="VMP">
+        <div class="row">
+        <div class="column">
+          <div class="card">
+          <center><p class="body2_titles">Our Vision</p>
+          <br><br></center>
+          <p class="body2_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+           nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
         </div>
-    </div>
-            </div>
-    </div>';
+      
+        <div class="column">
+          <div class="card">
+          <center><p class="body2_titles">Our Mission</p>
+          <br><br></center>
+          <p class="body2_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+           nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+          <center><p class="body2_titles">Our plan</p>
+       <br><br></center>
+       <p class="body2_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      </center>
+      ';
         return $str;
     }
     public function Footer()
