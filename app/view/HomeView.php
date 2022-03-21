@@ -130,7 +130,7 @@ class v extends View
                     </a>
                 </li>
                 <li>
-                    <a href="#" title="">
+                    <a href="https://www.instagram.com/niletubing/" title="">
                     <span class="icon fa fa-instagram"  id="i"></span>
                     </a>
                 </li>
