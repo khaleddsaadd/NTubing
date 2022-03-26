@@ -96,24 +96,42 @@ class adminRides extends Model
 
     function edit( $name, $price, $description,$image)
     {
-		$sql = "UPDATE rides set Name= '$name', Price='$price', Description='$description', Image='$image' where id=$this->id;";
-		if($this->db->query($sql) === true){
-			echo' <script> alert("Updated successfully.") </script>';
-            echo'<script>
-            window.location.href="adminRides.php";
-            </script>';
-          
-			$this->readRide($this->id);
-		} else{
-			echo "ERROR: Could not able to execute $sql. " . $conn->error;
+        if($image != "")
+        {
+            $sql = "UPDATE rides set  Image='$image' where id=$this->id;";
+            if($this->db->query($sql) === true){
+                echo' <script> alert("Updated successfully.") </script>';
+                echo'<script>
+                window.location.href="adminRides.php";
+                </script>';
+            
+                $this->readRide($this->id);
+            } else{
+                echo "ERROR: Could not able to execute $sql. " . $conn->error;
 		}
+        }
+        else
+        {
+            $sql = "UPDATE rides set Name= '$name', Price='$price', Description='$description' where id=$this->id;";
+            if($this->db->query($sql) === true){
+                echo' <script> alert("Updated successfully.") </script>';
+                echo'<script>
+                window.location.href="adminRides.php";
+                </script>';
+              
+                $this->readRide($this->id);
+            } else{
+                echo "ERROR: Could not able to execute $sql. " . $conn->error;
+            }
+        }
+
 	}
 
     function schdule( $rideTime,$rideDate, $rideCapacity, $currentCapacity)
     {   
         $Rid = $this->id;
 
-		$sql = "INSERT INTO ridesinfo (rideID, rideTime, rideDate, rideCapacity, currentCapacity) VALUES ( '$Rid', '$rideTime', '$rideDate', '$rideCapacity', '$currentCapacity','$enddate')";
+		$sql = "INSERT INTO ridesinfo (rideID, rideTime, rideDate, rideCapacity, currentCapacity) VALUES ( '$Rid', '$rideTime', '$rideDate', '$rideCapacity', '$currentCapacity')";
 		if($this->db->query($sql) === true)
         {
 			echo '<script> alert("Records inserted successfully.") </script>';

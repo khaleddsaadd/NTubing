@@ -24,6 +24,8 @@ class resView extends View
     public function output()
     {
         $allusers =$this->model->All();
+        if($allusers != "")
+        {
         echo '<center>
         <div class="all">
         <div id="resDiv"> 
@@ -62,6 +64,12 @@ class resView extends View
             </tr>
             </div>';
         }
+        }
+        else
+        {
+          
+        }
+        
         
    
 

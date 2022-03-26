@@ -62,8 +62,9 @@ class res extends Model
                 $Result[$i]=$MyObj;
                 $i++;
             }
+            return $Result;	
+
         }
-        return $Result;	
         
     }
 }

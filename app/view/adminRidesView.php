@@ -83,14 +83,14 @@ class rView extends View
 
                         <div id="dd">
     
-                        <input type=time  id="time"  name="Stime"  value=""  required=""> 
+                        <input type=time  id="time"  name="Stime"  value=""  > 
 
                         <br>
 
-                        <input type=date id="date" name="Sdate" value=""  required="" > 
+                        <input type=date id="date" name="Sdate" value=""  > 
                         <br>
     
-                        <input type=text id="capacity" name="Scapacity" value="" placeholder="Capacity"  required=""> 
+                        <input type=text id="capacity" name="Scapacity" value="" placeholder="Capacity" > 
                         <br>
     
                         <input type="submit"  id="add" name="Sadd" class="btn btn-primary" value="Add">
@@ -155,14 +155,14 @@ class rView extends View
 
                     <div id="dd">
 
-                    <input type=time  id="time"  name="Ctime"  value=""  required=""> 
+                    <input type=time  id="time"  name="Ctime"  value="" > 
 
                     <br>
 
-                    <input type=date id="date" name="Cdate" value=""  required=""> 
+                    <input type=date id="date" name="Cdate" value=""  > 
                     <br>
 
-                    <input type=text id="capacity" name="Ccapacity" value="" placeholder="Capacity"  required="" > 
+                    <input type=text id="capacity" name="Ccapacity" value="" placeholder="Capacity"   > 
                     <br>
 
                     <input type="submit"  id="add" name="Cadd" class="btn btn-primary" value="Add">
@@ -225,14 +225,14 @@ class rView extends View
 
                     <div id="dd">
 
-                    <input type=time  id="time"  name="Gtime"  value=""  required=""> 
+                    <input type=time  id="time"  name="Gtime"  value=""  > 
 
                     <br>
 
-                    <input type=date id="date" name="Gdate" value=""  required=""> 
+                    <input type=date id="date" name="Gdate" value="" > 
                     <br>
 
-                    <input type=text id="capacity" name="Gcapacity" value="" placeholder="Capacity"  required=""> 
+                    <input type=text id="capacity" name="Gcapacity" value="" placeholder="Capacity" > 
                     <br>
 
                     <input type="submit"  id="add" name="Gadd" class="btn btn-primary" value="Add">
