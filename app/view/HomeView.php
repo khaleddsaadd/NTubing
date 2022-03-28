@@ -24,8 +24,9 @@ class v extends View
        $str="";
         $str.='<div class="bg"><div class="container-fluid">
           <div class="row">
-            <div class="col-sm-3 col-md-12">
-                 <h1 class="introText">Go with the flow <br> Nile River Run</h1>
+          <div class= <b-col md="4" offset-md="4">
+          
+                 <h1 class="introText"; style="text-align:center;">Go with the flow <br> Nile River Run</h1>
             </div>
             <div class="col-sm-9 col-md-6">
             </div>
@@ -51,9 +52,9 @@ class v extends View
             </div>
             <div class="col-sm-9 col-md-4">
                 <div class="desc">
-                    <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    <h4 style="text-align:center;   ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                 nisi ut aliquip ex ea commodo consequat. </label>
+                 nisi ut aliquip ex ea commodo consequat. </h4>
                 </div>
             </div>
           </div>

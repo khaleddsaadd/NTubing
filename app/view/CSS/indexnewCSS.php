@@ -61,10 +61,21 @@ body {
 padding-left:22%
 }
 
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  #VMP {
+    width: 70%;
+    display: block;
+    margin-bottom: 20px;
+    padding-left:0%
+
+  }
+}
+
     .bg { 
 
       background-image: url("<?php echo $img?>");
-      height: 100%; 
+      height: 110%; 
       width: 100%;
       background-position: center;
       background-repeat: no-repeat;
@@ -86,6 +97,7 @@ padding-left:22%
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2)
 
     }
+    
     .introText
     {
         font-family: Bungee Outline;
@@ -93,8 +105,8 @@ padding-left:22%
         font-weight: normal;
         font-size: 96px;
         color: #FFFFFF;
-        padding-left:20%;
-        padding-top: 10%;
+        
+        padding-top: 15%;
 
     }
     .desc
@@ -105,17 +117,41 @@ padding-left:22%
         font-family: 'Hind';
         padding-top: 25%;
         padding-right: 10%;
-            color: #1F3351;
+        color: #1F3351;
 
-         font-family: 'Hind';
-        font-size: 20px;
+        font-family: 'Hind';
+        font-size: 30px;
 
 
     }
+
+    @media screen and (max-width: 600px) {
+    .desc {
+
+        font-size: 5px;
+        padding-left:0%;
+        padding-right: 0%;
+        padding-top: 15%;
+        height: 280px;
+    
+
+  }
+}
     #vid
     {
         padding-bottom: 10%;
     }
+        /* Responsive columns */
+@media screen and (max-width: 600px) {
+    #vid {
+    width:300px;
+    height: 250px;
+    padding-bottom: 0%;
+    
+
+  }
+}
+
     #row1
     {
         width: 90%;
@@ -127,6 +163,17 @@ padding-left:22%
     {
         padding-left: 10%;   
     }
+
+            /* Responsive columns */
+@media screen and (max-width: 600px) {
+    .body1Vid {
+
+    padding-left: 0%;   
+    
+
+  }
+}
+
     .Timg
     {
         padding-left: 5%;
@@ -197,9 +244,21 @@ padding-left:22%
     position: absolute;
     width:100%;
     height:40%; 
-    top:320%;
+    top:250%;
     left: 0%;
     background-color : #1F3351;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  #Footer {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    top:400%
+
+  
+  }
 }
 #NTLogo
 {
@@ -208,6 +267,17 @@ padding-left:22%
     height:50%;
     left:4%;
 }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+#NTLogo {
+    width:30%;
+    height:50%;
+    left:10%;
+
+  }
+}
+
 .footer_Div_Left
 {
     margin-top: 10%;
@@ -221,14 +291,37 @@ padding-left:22%
 
     color: white;
     font-family: 'Hind';
+
 }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .footer_Text_Left {
+  padding-top:22%;
+  padding-left:9%;
+
+  }
+}
+
 #locImg
 {
     position:absolute;
     width:20%;
+    height:90%;
+    left:61%;
+    top:-15%;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+#locImg {
+    width:50%;
     height:80%;
-    left:60%;
-    top:1%;
+    left:52%;
+    top:-7%;
+    
+
+  }
 }
 .footer_Div_Right
 {
@@ -242,6 +335,16 @@ padding-left:22%
     font-family: 'Hind';
     
 }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+.footer_Text_Right {
+  padding-top:60%;
+  
+
+  }
+}
+
 #Footer2
 {
     position: absolute;
@@ -249,7 +352,18 @@ padding-left:22%
     background-color: #F1D158;
     width:100%;
     height: 7%; 
-    top: 360%;
+    top: 290%;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  #Footer2 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    top:440%;
+
+  }
 }
 .socialLogo
 { 
@@ -295,6 +409,9 @@ background-color: #ee7c22;
     top:15%;
     /*left:1%;*/
 }
+
+
+
 #i{
     position: relative;
     top: 18%;
