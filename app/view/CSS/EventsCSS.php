@@ -24,7 +24,7 @@ $img2 = __ROOT__.'/view/Images/tubesMobile.png';
 @media screen and (max-width: 600px) {
     .indexBG {
         background-image: url("<?php echo $img2?>");
-      height: 100%; 
+        height: 100%; 
         width: 100%;
       /* Center and scale the image nicely */
       background-position: center;
