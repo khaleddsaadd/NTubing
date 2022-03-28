@@ -22,8 +22,8 @@ class offerview extends View
         $allevents =$this->model->All();
         echo '<div class="indexBG"><div class="container-fluid">
         <div class="row">
-          <div class="col-sm-3 col-md-6">
-               <h1 class="indexText">Nile Tubing <br> Events</h1>
+        <div class= <b-col md="4" offset-md="4">
+               <h1 class="indexText" ; style="text-align:center;">Nile Tubing <br> Events</h1>
           </div>
           <div class="col-sm-9 col-md-6">
           </div>
@@ -38,7 +38,9 @@ class offerview extends View
                     foreach($allevents as $event)
                     {
                         $img = __ROOT__.'/view/Images/'.$event->image.'';
-                        echo '<div class="all">
+                       
+                        echo '<center>
+                        <div class="all">
                         <div class="oneOffer">';
                         echo '<div class="imgdiv"><img class="oimg"src="'.$img.'"></div><br>';
                         echo '
@@ -52,7 +54,9 @@ class offerview extends View
                         echo'</center>';
                         echo '<br>';
                         echo'</div>
-                        </div>';
+                        </div>
+                        </center>'
+                        ;
                     }
 
                     echo'

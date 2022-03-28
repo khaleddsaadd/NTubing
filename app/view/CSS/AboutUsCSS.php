@@ -7,14 +7,21 @@
  background-repeat: no-repeat;
 /* background-color: black;*/
 }
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+	#row1 {
+		height: 70%;
+ 		width: 100%;
+  }
+}
 
-#AU{
+#A{
 
 position: absolute;
 width: 516.04px;
 height: 263.02px;
 left: 15%;
-top: 18%;
+top: 25%;
 
 font-family: Hind;
 font-style: normal;
@@ -26,6 +33,49 @@ align-items: center;
 letter-spacing: -0.017em;
 
 color: #1F3351;
+}
+
+
+#U{
+
+position: absolute;
+width: 516.04px;
+height: 263.02px;
+left: 20%;
+top:37%;
+
+font-family: Hind;
+font-style: normal;
+font-weight: normal;
+font-size: 96px;
+line-height: 154px;
+display: flex;
+align-items: center;
+letter-spacing: -0.017em;
+
+color: #1F3351;
+}
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+	#A {
+		font-size: 60px;
+		top: 8%;	
+		left: 10%;
+
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+	#U {
+		font-size: 60px;
+		left: 20%;
+		top:17%;
+
+			
+  }
 }
 
 #rec2
@@ -64,6 +114,7 @@ padding-left: 5%;
 width: 100%;
 
 }
+
 
 #p2{
 

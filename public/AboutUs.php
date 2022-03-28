@@ -26,10 +26,12 @@ include '../app/view/CSS/AboutUsCSS.php';
 	
 		<div class="row-md" id="row1">
 
-			<h1 id="AU">About Us </h1>
+			<h1 id="A">About </h1>
+			<h1 id="U"> Us </h1>
+			
 
 		</div>
-
+<!-- 
     <div class="row-md" id="rec2">
 	
 <div class="row-sm"> 
@@ -40,7 +42,7 @@ include '../app/view/CSS/AboutUsCSS.php';
 <div class="row">
 
 	<div class="col-md-4">
-		<img  id="L" src="../app/view/Images/NTLogo.png">
+		<img  class="L" src="../app/view/Images/NTLogo.png">
 	</div>
 	
 
@@ -89,7 +91,7 @@ include '../app/view/CSS/AboutUsCSS.php';
 </div>
 
 
-	</div>
+	</div> -->
 
 
 
