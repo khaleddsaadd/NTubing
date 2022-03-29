@@ -6,10 +6,88 @@ require_once(__ROOT__ . "view/RideView.php");
 
 ?>
 <style>
+* {
+  box-sizing: border-box;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
 
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}	
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding-left: 200px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 .body{
 	background-color: white;
 	font-family: Hind;
+}
+#body1
+{
+	padding-top:10%;
+	padding-left:2%;
+}
+@media screen and (max-width: 600px) {
+  #body1 {
+	padding-top:40%;
+  }
+}
+#body1_left
+{
+	padding-left: 5%;
+	background: #FFFFFF;
+	box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.15);
+	border-radius: 20px;
+	width: 40%;
+	height: 50%;
+	
+}
+@media screen and (max-width: 600px) {
+  #body1_left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #body1_left{
+	  height: 60%;
+  }
+}
+#body1_right
+{
+
+}
+@media screen and (max-width: 600px) {
+  #body1_right{
+    width: 100%;
+	padding-left:3%;
+  }
 }
 #rec1{
 	position: absolute;
@@ -24,12 +102,6 @@ border-radius: 20px;}
 
 
 #price{
-	position: absolute;
-/*width: 100%;
-height: 10%;*/
-left: 15%;
-top: 9%;
-
 font-family: Hind;
 font-style: normal;
 font-weight: normal;
@@ -42,12 +114,6 @@ letter-spacing: -0.017em;
 color: #1F3351;}
 
 #per{
-	position: relative;
-/*width: 137px;
-height: 121px;*/
-left: 16%;
-top: 20%;
-
 font-family: Hind;
 font-style: normal;
 font-weight: normal;
@@ -62,11 +128,6 @@ color: #1F3351;
 }
 
 #date{
-	position: absolute;
-/*width: 20%;
-height: 20%;*/
-left: 15%;
-top: 30%;
 
 font-family: Hind;
 font-style: normal;
@@ -95,11 +156,7 @@ select
 
 }
 .form-control {
-	position: absolute;
-	top: 5%;
-	left: 13%;
-
-	background-color: #ebecee;
+	color: #ebecee;
 	border-radius: 400px;
 	width: fit-content;
 	border: none;
@@ -112,11 +169,7 @@ select
 }
 
 .persons{
-	position: absolute;
-/*width: 115px;
-height: 46px;*/
-left: 15%;
-top: 60%;
+
 
 font-family: Hind;
 font-style: normal;
@@ -134,35 +187,11 @@ color: #1F3351;
 
 #quantity
 {
-position: absolute;
-width: 30%;
-height: 10%;
-left: 14%;
-top: 70%;
-text-align: center;
-background: #EEEFF3;
-border-radius: 30px;
-font-size: 18px;
+
 }
 
 #cap{
-	position: absolute;
-width: 30%;
-height: 10%;
-left: 50%;
-top: 67%;
 
-font-family: Hind;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 38px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.017em;
-
-color: #F1D158;
 
 }
 
@@ -201,34 +230,29 @@ border-radius: 30px;
 }
 
 h1{
-	position: absolute;
-width: 700px;
-height: 165px;
-left: 55%;
-top: 13%;
 
 font-family: Hind;
 font-style: normal;
 font-weight: normal;
 font-size: 75px;
-line-height: 128px;
-display: flex;
 align-items: right;
 letter-spacing: -0.017em;
 
 color: #1F3351;
+}
+@media screen and (max-width: 600px) {
+  h1{
+	font-size: 40px;
+	line-height: 50px;
+
+  }
 }
 .review{
 margin-top:30%;
 margin-left:8%;
 }
 #des{
-	position: absolute;
-width: 506px;
-height: 337px;
-left: 55%;
-top: 25%;
-
+	
 font-family: Hind;
 font-style: normal;
 font-weight: normal;
@@ -239,6 +263,12 @@ align-items: center;
 letter-spacing: -0.017em;
 
 color: #000000;
+}
+@media screen and (max-width: 600px) {
+  #des{
+	font-size: 17px;
+
+  }
 }
 
 #rideinfo{
@@ -279,65 +309,65 @@ background: #FFFFFF;
 box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.15);
 }
 
-#rev{
-
-	position: absolute;
-width: 419px;
-height: 102px;
-left: 10%;
-top: 5%;
+#rev-text{
 
 font-family: 'Hind';
 font-style: normal;
 font-weight: normal;
 font-size: 64px;
 line-height: 102px;
-display: flex;
-align-items: center;
 letter-spacing: -0.017em;
 
 color: #EEBF0F;
 
 
 }
-
+#rev-all
+{
+	padding-top:8%;
+}
+@media screen and (max-width: 600px) {
+	#rev-all
+{
+width:100%;
+  }
+}
+#rev-div
+{
+	/* background: #EEEFF3; */
+	width: 50%;
+}
+@media screen and (max-width: 600px) {
+	#rev-div
+{
+width:100%;
+  }
+}
 .wrev{
-	position: absolute;
-width: 80%;
-height: 225px;
-left: 10%;
-top: 30%;
-
+	
 background: #EEEFF3;
 }
 
 #name{
-	position: absolute;
-width: 20%;
-height: 15%;
-left: 3%;
-top: 10%;
+	
 border-radius: 25px;
     border: 2px solid ;
 background: #FFFFFF;
 box-sizing: border-box;
+width:50%;
+
 }
 
 #rev-box{
-	position: absolute;
-width: 70%;
-height: 40%;
-left: 3%;
-top: 35%;
+	
 border-radius: 25px;
 box-sizing: border-box;
+width:50%;
+height: 20%;
 }
 
 #rev-sub{
 
-	position: absolute;
 
-left: 70%;
-top: 57%;
 }
 </style>

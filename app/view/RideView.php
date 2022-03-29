@@ -1,17 +1,16 @@
 <head>
-	<title>Ride</title>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
-		
+        <title>Rides</title>
 <?php include 'NavBoot/index.html';?>
-	
 </head>
+
 
 <?php 
 
@@ -35,67 +34,63 @@ class rideView
 		}
 		$review.='</ul>';
 
-        $str='<div class="container">
-		<div class="row">
-		  <div class="col-md" id="rec1">
-	
-		  
+        $str='
+		<div class="row" id="body1">
+		<div class="column" id="body1_left">
 		<p id="price">'.$model->Price.' EGP</p>
 		<p id="per">per person</p>
-	
 		<p id="date"> Ride Date/Time - Remaining capacity</p>
 		<form action="checkout.php?id='.$model->rideID.'" method="post">
-		<div class="date">
-		<select id="rideinfo" name="rideDate">
+		<div class="">
+		<select id="" name="rideDate">
 			'.$list.'</select>
 		</div>
-	
 		<p class="persons">Persons</p>
-	
 		<div class="quantity">
-	
-			<input type="number"  class="form-control" id="quantity" value="1" name="quantity" min="1"  required>
-	
-	
+		<input type="number"  class="form-control" id="k" value="1" name="quantity" min="1"  required>
 		</div>
+		<p id="">'.$model->currentCapacity.'</p>
 	
-		<p id="cap">'.$model->currentCapacity.'</p>
-	
-		<div class="sub">
+		<div class="">
 		<button class="submit-btn" name="book">Ride now</button>
 			</div>
-	</form>
-			
+		</form>
 		
-	
 		</div>
-	
-	
-	  <div class="col-md">
-		  <h1>'.$model->Name.'</h1>
-		  <p id="des">'.$model->Description.'</p>
-		  
+
+		
+		<div class="column" id="body1_right">
+		<h1>'.$model->Name.'</h1>
+		<p id="des">'.$model->Description.'</p>
+		</div>
 	  </div>
+	  <div id="rev-all">
+	  <center>
+		<div id="rev-div">
+		<h1 id="rev-text">Reviews</h1>
+		<form action="Ride.php?id='.$model->rideID.'" method="POST">
+			<input type="text" id="name" name="name" placeholder="Write your name" required=""><br><br>
+			<input type="text" id="rev-box" name="rev-box" placeholder="Write your review"required=""><br><br>
+			<button class="submit-btn" name="rev-sub" id="rev-sub">Send</button>
+		</div>
+		</form>
+
+		</center>
+	
+	  </div>
+	  <div>
+	  <h1 style="font-size:30px;">Previous Reviews </h1>
+	  <div>'.$review.'
+	  </div>
+	  </div>
+
+
 	  
 	
-	
-	</div>
-	<div class="row-md" id="rec2">
-		<h1 id="rev">Reviews</h1>
-		<form action="Ride.php?id='.$model->rideID.'" method="POST">
-		<div class="wrev">
-			<input type="text" id="name" name="name" placeholder="Write your name" required=""><br>
-			<input type="text" id="rev-box" name="rev-box" placeholder="Write your review"required=""><br>
-		</div>
-	
-		<div>
-			<button class="submit-btn" name="rev-sub" id="rev-sub">Submit</button>
-		</div></form>
-		<div class="review">'.$review.'
-		 </div>
-		 </div>
-	
-	</div>';
+
+
+
+';
         
         
         return $str;
