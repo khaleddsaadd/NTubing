@@ -28,8 +28,6 @@ include '../app/view/CSS/AboutUsCSS.php';
 
 			<h1 id="A">About </h1>
 			<h1 id="U"> Us </h1>
-			
-
 		</div>
 <!-- 
     <div class="row-md" id="rec2">
