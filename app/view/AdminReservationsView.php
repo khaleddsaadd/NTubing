@@ -34,7 +34,7 @@ class resView extends View
                 <input type="submit" value="Download Reservations List" id="printBtn" name="pr">
             </form>
             <div id="resData">';
-        echo '<table class="table table-dark">
+        echo '<table class="table table-dark" id=table>
         <thead>
             <tr>
               <th scope="col">ID</th>

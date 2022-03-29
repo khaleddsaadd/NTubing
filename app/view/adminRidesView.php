@@ -81,7 +81,7 @@ class rView extends View
 
                         <form name="single" method="POST" action="">
 
-                        <div id="dd">
+                        <div class="dd">
     
                         <input type=time  id="time"  name="Stime"  value=""  > 
 
@@ -153,7 +153,7 @@ class rView extends View
 
                     <form name="couple" method="POST" action="">
 
-                    <div id="dd">
+                    <div class="dd">
 
                     <input type=time  id="time"  name="Ctime"  value="" > 
 
@@ -189,7 +189,7 @@ class rView extends View
 
           <form method="POST" action="">
           
-                <div id="dd">
+                <div class="dd">
 
                 <p id="TripTitle">
 
@@ -250,10 +250,11 @@ class rView extends View
     public function offers()
     {
         $str='<br><br><br><br><br><br>
+            <center>
             <div id="body5">
                 <div class="container-fluid">
                     <div class="row">
-                        <label id="o" class="OfferEventText">Special Offers </label>
+                        <label id="o" class="OfferEventText">Add New Event </label>
 
                         <form name="offers" method="POST" action="">
 
@@ -261,14 +262,14 @@ class rView extends View
                         <div class="f">
 
                         <div class="form-group">
-                        <label>Offer Name:</label>
+                        <label>Event Name:</label>
                         <input type=text  class="form-control" id="offername" name="offername" placeholder="Name"  required="">
 
                         </div>
                         
 
                         <div class="form-group">
-                        <label>Offer Price:</label>
+                        <label>Event Price:</label>
                         <input type=text  class="form-control" id="offerprice" name="offerprice"  placeholder="Price" required="">
 
                         </div>
@@ -325,7 +326,9 @@ class rView extends View
                     </div>
                     </form>
                 </div>
-            </div>';
+            </div>
+            </center>
+            ';
         return $str;
     }
 }

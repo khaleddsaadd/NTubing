@@ -44,7 +44,15 @@ $img = __ROOT__.'/view/Images/tubes.png';
     background-color: #EEEFF3;
     border-radius: 80px;
     color: #1F3351;
+}
+@media screen and (max-width: 600px) {
+  #TripTitle {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Hind';font-size: 28px;
 
+  }
 }
 #indexBG 
 {
@@ -67,13 +75,20 @@ $img = __ROOT__.'/view/Images/tubes.png';
     height: 400px;
 
 }
+@media screen and (max-width: 600px) {
+  .Timg {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 #body2
 {
     padding-top: 5%;
 }
 #body3
 {
-    padding-top: 5%;
+    padding-top: 10%;
 }
 #body4
 {
@@ -90,8 +105,15 @@ $img = __ROOT__.'/view/Images/tubes.png';
     color: #1F3351;
     background: #FFFFFF;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2)
-   
-    
+
+}
+@media screen and (max-width: 600px) {
+  .desc {
+    height: 300px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 #dd
 {
@@ -112,6 +134,12 @@ $img = __ROOT__.'/view/Images/tubes.png';
     font-family: 'Hind';
     font-size: 20px;
 
+}
+@media screen and (max-width: 600px) {
+  .dtext {
+    font-size: 15px;
+
+  }
 }
 .Price
 {

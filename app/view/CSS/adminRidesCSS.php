@@ -37,18 +37,22 @@ $img = __ROOT__.'/view/Images/tubes.png';
 }
 #TripTitle
 {
-    width: 22%;
-    height:10%;
+    width: 20%;
     padding-top: 0.5%;
     text-align: center;
     font-family: 'Hind';font-size: 32px;
-    background-color: #EEEFF3;
+    /* background-color: #EEEFF3; */
     border-radius: 80px;
     color: #1F3351;
-    padding-top:0.5%;
-    
-   
+}
+@media screen and (max-width: 600px) {
+  #TripTitle {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Hind';font-size: 28px;
 
+  }
 }
 #indexBG 
 {
@@ -70,6 +74,13 @@ $img = __ROOT__.'/view/Images/tubes.png';
     width:80%;
     height: 400px;
 
+}
+@media screen and (max-width: 600px) {
+  .Timg {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 #body2
 {
@@ -97,9 +108,22 @@ $img = __ROOT__.'/view/Images/tubes.png';
    
     
 }
-#dd
+@media screen and (max-width: 600px) {
+  .desc {
+    height: 380px;
+
+    width: 97%;
+  }
+}
+.dd
 {
     padding-left: 3%;
+}
+@media screen and (max-width: 600px) {
+  .dd {
+
+    width: 90%;
+  }
 }
 .BookNow
 {
@@ -122,22 +146,42 @@ $img = __ROOT__.'/view/Images/tubes.png';
     border-radius: 20px;   
 
 }
+@media screen and (max-width: 600px) {
+  #title {
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Hind';font-size: 28px;
+
+  }
+}
 #description
 {   
-    position:absolute;
     width:100%;
     height:60%;
     left:9%;
     Top:4%;    
 }
-
+@media screen and (max-width: 600px) {
+    #description
+ {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 .dtext
 {
     font-family: 'Hind';
     font-size: 20px;
 
 }
+@media screen and (max-width: 600px) {
+  .dtext {
+    font-size: 15px;
 
+  }
+}
 #Price
 { 
     position:absolute;
@@ -231,7 +275,7 @@ a
 
 .OfferEventText
 {
-    position: absolute;
+    /* position: absolute; */
     font-family: 'Hind';
     font-size: 30px;
     left:5%;
@@ -239,6 +283,7 @@ a
      color: #1F3351;
 
 }
+
 .edit
 {
 position: absolute;
@@ -277,10 +322,10 @@ right:20%;
 
 }
 .f
-{
+/* {
     position:absolute;
     margin-top:7%;
-    left:37%;
+    left:37%; */
   
     
 }

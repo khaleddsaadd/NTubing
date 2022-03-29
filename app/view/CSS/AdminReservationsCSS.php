@@ -27,13 +27,29 @@
 {
     padding-top: 10%;    
 }
+@media screen and (max-width: 600px) {
+  .table {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 #resData 
 {
-    width: 1000px;
+    width: 80%;
     height: 100%;
     border: 5px solid rgba(192, 192, 192, 0.3);
     background: #FFFFFF;
 }
+@media screen and (max-width: 600px) {
+  #resData {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 h1,th,tr,td
 {
     font-family: 'Hind';
