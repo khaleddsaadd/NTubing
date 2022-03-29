@@ -7,6 +7,8 @@ $Cimg= __ROOT__.'/view/Images/ContactUs.png';
 ?>
 
 <style>
+
+  
     #row1{
   
  
@@ -60,7 +62,17 @@ $Cimg= __ROOT__.'/view/Images/ContactUs.png';
    margin-left:18%;
    
 }
-
+#formety
+{
+  padding-top:43%;
+}
+@media screen and (max-width: 600px) {
+	#formety
+{
+width:100%;
+padding-top:120%;
+  }
+}
 #box{
 
   position: absolute;
@@ -146,7 +158,16 @@ $Cimg= __ROOT__.'/view/Images/ContactUs.png';
       left: 20px;
 
   }
-  
+#name,#email,#phone 
+{
+  width:50%;
+
+}
+#message 
+{
+  width:50%;
+  height: 20%;
+}
 
 
 </style>

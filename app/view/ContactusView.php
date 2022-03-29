@@ -41,32 +41,31 @@ class contactV extends view
     public function form()
     {
         $str="";
-        $str.='<div class="total"><form method="POST" action="" class="contact-form row" style="padding-top:40%; margin-left:10%;" id="box">
-        <div id="newgedan">
+        $str.='
+<center>
+   <div id="formety">
+   <form action="" method="POST">
+   <div class="form-group">
+   <label for="Name">Name</label>
+   <input id="name" name="name" class="form-control"  type="text" required>
+   <br>
 
-      <div class="form-field col-lg-12">
-         <input id="name" name="name" class="input-text js-input" type="text" required>
-         <label class="label" for="name">Name</label>
-      </div>
-      <div class="form-field col-lg-12 ">
-         <input id="email" name="email" class="input-text js-input" type="email" required>
-         <label class="label" for="email">E-mail</label>
-      </div>
+   <label for="Email">Email</label>
+   <input id="email" name="email" class="form-control"  type="email" required>
+   <br>
 
-       <div class="form-field col-lg-12 ">
-         <input id="phone" name="phone" class="input-text js-input" type="text" required>
-         <label class="label" for="phone">Contact Number</label>
-      </div>
-      
-      <div class="form-field col-lg-12">
-         <input id="message" name="message" class="input-text js-input" type="text" required>
-         <label class="label" for="message">Message</label>
-      </div>
-      <div class="form-field col-lg-12">
-         <input class="submit-btn" type="submit" value="Submit" id="submit" name="submit"> 
-      </div>
-   </form>
+   <label for="phone">Phone</label>
+   <input id="phone" name="phone" class="form-control" type="text" required>
+   <br>
 
+   <label for="message">Message</label>
+   <input id="message" name="message" class="form-control" type="text" required>
+   <br>
+
+   <button type="submit" class="btn btn-primary" id="submit" name="submit">Submit</button>
+ </form>
+ </div>
+</center>
                  ';
 
                  return $str;
